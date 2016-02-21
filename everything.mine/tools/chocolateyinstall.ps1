@@ -25,4 +25,4 @@ $configFilename = Join-Path $scriptPath "Everything.ini"
 Start-Process $everythingExecutable -Wait -ArgumentList "-install-config $configFilename"
 
 Write-Host "Starting Everything again"
-Start-Process $everythingExecutable
+Start-Process $everythingExecutable -ArgumentList "-startup"
