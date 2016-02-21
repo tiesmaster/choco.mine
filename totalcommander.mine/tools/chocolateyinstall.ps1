@@ -8,5 +8,4 @@ $totalcmdPath = (gp -path "HKLM:\SOFTWARE\Ghisler\Total Commander" -name Install
 Copy-Item $licenceFile "$totalcmdPath" -Force
 
 Add-Content "$env:APPDATA\GHISLER\wincmd.ini" "AltSearch=2"
-
-# TODO: append Editor=C:\Program Files (x86)\vim\vim74\gvim.exe, and make this dependent on GVIM.mine
+Add-Content "$env:APPDATA\GHISLER\wincmd.ini" "Editor=C:\Program Files (x86)\vim\vim74\gvim.exe"

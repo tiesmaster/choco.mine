@@ -23,6 +23,7 @@
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/totalcommander.mine.png</iconUrl>-->
     <dependencies>
       <dependency id="totalcommander" />
+      <dependency id="vim" />
     </dependencies>
     <releaseNotes>First version</releaseNotes>
     <!--<provides></provides>-->
