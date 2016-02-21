@@ -12,21 +12,15 @@
     </description>
     <projectUrl>https://github.com/tiesmaster</projectUrl>
     <packageSourceUrl>https://github.com/tiesmaster</packageSourceUrl>
-    <!--<projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
     <tags>totalcommander mine admin</tags>
     <copyright>2016</copyright>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/totalcommander.mine.png</iconUrl>-->
     <dependencies>
       <dependency id="totalcommander" />
       <dependency id="vim" />
     </dependencies>
     <releaseNotes>First version</releaseNotes>
-    <!--<provides></provides>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
