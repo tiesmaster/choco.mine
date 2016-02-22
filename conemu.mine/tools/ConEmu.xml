@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key name="Software">
+	<key name="ConEmu">
+		<key name=".Vanilla" modified="2016-02-22 12:35:19" build="160222">
+			<value name="StartTasksName" type="string" data="{Bash::bash}"/>
+			<value name="SetDefaultTerminal" type="hex" data="01"/>
+			<value name="SetDefaultTerminalStartup" type="hex" data="01"/>
+			<value name="DefaultTerminalApps" type="string" data="explorer.exe|totalcmd.exe|devenv.exe"/>
+			<value name="TabSkipWords" type="string" data="Administrator:|Администратор:|MINGW64:|/c/Users/ties|/src/projects"/>
+		</key>
+	</key>
+</key>
