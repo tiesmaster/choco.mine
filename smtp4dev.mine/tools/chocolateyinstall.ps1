@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 Write-Host "Installing .NET Framework 3.5 (required by Smtp4Dev)"
-Enable-WindowsOptionalFeature -Online -FeatureName NetFx3
+Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 |Out-Null
 
 $smtp4devRegKey = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\4A13256439293DF4DBF7FA78E2162E2C"
 if(Test-Path $smtp4devRegKey) {
@@ -24,7 +24,7 @@ $appConfig.Save($appConfigFilename)
 
 Write-Host "Configuring Smtp4dev to start at login"
 $smtp4devExecutable = Join-Path $smtp4devDir "Smtp4dev.exe"
-New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "smtp4dev" -Value $smtp4devExecutable
+New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "smtp4dev" -Value $smtp4devExecutable |Out-Null
 
 Write-Host "Starting Smtp4dev again"
 Start-Process $smtp4devExecutable
